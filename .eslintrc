@@ -1,0 +1,7 @@
+{
+  "extends": "airbnb-base/legacy",
+  "rules": {
+    "linebreak-style": 0,
+    "indent": [2, 4]
+  }
+}

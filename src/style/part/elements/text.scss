@@ -1,0 +1,40 @@
+// ----- text ----- //
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: $Didact;
+}
+
+p {
+    margin-top: 0;
+}
+
+.lr-inner-container p {
+    padding: {
+        left: 20px;
+        right: 20px;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.35rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+.lr-create-date {
+    text-align: right;
+    font-style: italic;
+    color: $color-grey;
+    font-size: .9rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}

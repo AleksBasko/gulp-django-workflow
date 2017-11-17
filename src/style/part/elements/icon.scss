@@ -1,0 +1,21 @@
+.icon {
+  width: 50px;
+  height: 50px;
+
+
+  &.icon-close {
+    fill: red;
+    width: 100px;
+    height: 100px;
+  }
+  &.icon-mark {
+    fill: green;
+    width: 30px;
+    height: 30px;
+  }
+  &.icon-message {
+    fill: blue;
+    width: 200px;
+    height: 200px;
+  }
+}

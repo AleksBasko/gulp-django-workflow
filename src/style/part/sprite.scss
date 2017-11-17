@@ -1,0 +1,233 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$calendar-name: 'calendar';
+$calendar-x: 143px;
+$calendar-y: 271px;
+$calendar-offset-x: -143px;
+$calendar-offset-y: -271px;
+$calendar-width: 128px;
+$calendar-height: 128px;
+$calendar-total-width: 670px;
+$calendar-total-height: 399px;
+$calendar-image: '../image/sprites/sprite/sprite.png';
+$calendar: (143px, 271px, -143px, -271px, 128px, 128px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'calendar', );
+$fb-name: 'fb';
+$fb-x: 589px;
+$fb-y: 206px;
+$fb-offset-x: -589px;
+$fb-offset-y: -206px;
+$fb-width: 32px;
+$fb-height: 32px;
+$fb-total-width: 670px;
+$fb-total-height: 399px;
+$fb-image: '../image/sprites/sprite/sprite.png';
+$fb: (589px, 206px, -589px, -206px, 32px, 32px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'fb', );
+$gdoc-name: 'gdoc';
+$gdoc-x: 605px;
+$gdoc-y: 143px;
+$gdoc-offset-x: -605px;
+$gdoc-offset-y: -143px;
+$gdoc-width: 48px;
+$gdoc-height: 48px;
+$gdoc-total-width: 670px;
+$gdoc-total-height: 399px;
+$gdoc-image: '../image/sprites/sprite/sprite.png';
+$gdoc: (605px, 143px, -605px, -143px, 48px, 48px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'gdoc', );
+$gplay-name: 'gplay';
+$gplay-x: 542px;
+$gplay-y: 253px;
+$gplay-offset-x: -542px;
+$gplay-offset-y: -253px;
+$gplay-width: 32px;
+$gplay-height: 32px;
+$gplay-total-width: 670px;
+$gplay-total-height: 399px;
+$gplay-image: '../image/sprites/sprite/sprite.png';
+$gplay: (542px, 253px, -542px, -253px, 32px, 32px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'gplay', );
+$gplus-name: 'gplus';
+$gplus-x: 542px;
+$gplus-y: 143px;
+$gplus-offset-x: -542px;
+$gplus-offset-y: -143px;
+$gplus-width: 48px;
+$gplus-height: 48px;
+$gplus-total-width: 670px;
+$gplus-total-height: 399px;
+$gplus-image: '../image/sprites/sprite/sprite.png';
+$gplus: (542px, 143px, -542px, -143px, 48px, 48px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'gplus', );
+$in-name: 'in';
+$in-x: 542px;
+$in-y: 206px;
+$in-offset-x: -542px;
+$in-offset-y: -206px;
+$in-width: 32px;
+$in-height: 32px;
+$in-total-width: 670px;
+$in-total-height: 399px;
+$in-image: '../image/sprites/sprite/sprite.png';
+$in: (542px, 206px, -542px, -206px, 32px, 32px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'in', );
+$man-name: 'man';
+$man-x: 542px;
+$man-y: 0px;
+$man-offset-x: -542px;
+$man-offset-y: 0px;
+$man-width: 128px;
+$man-height: 128px;
+$man-total-width: 670px;
+$man-total-height: 399px;
+$man-image: '../image/sprites/sprite/sprite.png';
+$man: (542px, 0px, -542px, 0px, 128px, 128px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'man', );
+$note-name: 'note';
+$note-x: 0px;
+$note-y: 271px;
+$note-offset-x: 0px;
+$note-offset-y: -271px;
+$note-width: 128px;
+$note-height: 128px;
+$note-total-width: 670px;
+$note-total-height: 399px;
+$note-image: '../image/sprites/sprite/sprite.png';
+$note: (0px, 271px, 0px, -271px, 128px, 128px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'note', );
+$pnt-name: 'pnt';
+$pnt-x: 636px;
+$pnt-y: 206px;
+$pnt-offset-x: -636px;
+$pnt-offset-y: -206px;
+$pnt-width: 32px;
+$pnt-height: 32px;
+$pnt-total-width: 670px;
+$pnt-total-height: 399px;
+$pnt-image: '../image/sprites/sprite/sprite.png';
+$pnt: (636px, 206px, -636px, -206px, 32px, 32px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'pnt', );
+$search-second-name: 'search_second';
+$search-second-x: 271px;
+$search-second-y: 0px;
+$search-second-offset-x: -271px;
+$search-second-offset-y: 0px;
+$search-second-width: 256px;
+$search-second-height: 256px;
+$search-second-total-width: 670px;
+$search-second-total-height: 399px;
+$search-second-image: '../image/sprites/sprite/sprite.png';
+$search-second: (271px, 0px, -271px, 0px, 256px, 256px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'search_second', );
+$search-thierd-name: 'search_thierd';
+$search-thierd-x: 0px;
+$search-thierd-y: 0px;
+$search-thierd-offset-x: 0px;
+$search-thierd-offset-y: 0px;
+$search-thierd-width: 256px;
+$search-thierd-height: 256px;
+$search-thierd-total-width: 670px;
+$search-thierd-total-height: 399px;
+$search-thierd-image: '../image/sprites/sprite/sprite.png';
+$search-thierd: (0px, 0px, 0px, 0px, 256px, 256px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'search_thierd', );
+$tw-name: 'tw';
+$tw-x: 589px;
+$tw-y: 253px;
+$tw-offset-x: -589px;
+$tw-offset-y: -253px;
+$tw-width: 32px;
+$tw-height: 32px;
+$tw-total-width: 670px;
+$tw-total-height: 399px;
+$tw-image: '../image/sprites/sprite/sprite.png';
+$tw: (589px, 253px, -589px, -253px, 32px, 32px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'tw', );
+$woman-name: 'woman';
+$woman-x: 286px;
+$woman-y: 271px;
+$woman-offset-x: -286px;
+$woman-offset-y: -271px;
+$woman-width: 128px;
+$woman-height: 128px;
+$woman-total-width: 670px;
+$woman-total-height: 399px;
+$woman-image: '../image/sprites/sprite/sprite.png';
+$woman: (286px, 271px, -286px, -271px, 128px, 128px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'woman', );
+$you-name: 'you';
+$you-x: 636px;
+$you-y: 253px;
+$you-offset-x: -636px;
+$you-offset-y: -253px;
+$you-width: 32px;
+$you-height: 32px;
+$you-total-width: 670px;
+$you-total-height: 399px;
+$you-image: '../image/sprites/sprite/sprite.png';
+$you: (636px, 253px, -636px, -253px, 32px, 32px, 670px, 399px, '../image/sprites/sprite/sprite.png', 'you', );
+$spritesheet-width: 670px;
+$spritesheet-height: 399px;
+$spritesheet-image: '../image/sprites/sprite/sprite.png';
+$spritesheet-sprites: ($calendar, $fb, $gdoc, $gplay, $gplus, $in, $man, $note, $pnt, $search-second, $search-thierd, $tw, $woman, $you, );
+$spritesheet: (670px, 399px, '../image/sprites/sprite/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@mixin marginAuto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//div {
+//  @include marginAuto;
+//}
+
+@mixin border ( $bWidth, $bColor, $bRadius ) {
+  border: $bWidth solid $bColor;
+  border-radius: $bRadius;
+}
+
+//div {
+//  @include border( 2px, red, 5px );
+//}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//div {
+//  @include flex;
+//}
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+//input,
+//textarea {
+//  @include input-placeholder {
+//    color: $grey;
+//  }
+//}
+
+@mixin bp-large {
+  @media only screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin bp-m-large {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin bp-m-small {
+  @media only screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+
+//.sidebar {
+//  width: 60%;
+//  float: left;
+//  margin: 0 2% 0 0;
+//  @include bp-small {
+//    width: 100%;
+//    float: none;
+//    margin: 0;
+//  }
+//}
+
+
+$img-path: "/static/build/img/";
+
+@mixin bgImg( $bg-color, $img-name ) {
+  background: $bg-color url(#{$pathimg}/#{$img-name}) center center no-repeat;
+  background-size: cover;
+}
+
+//div {
+//  @include bgImg( green, 'site/bg-content.png');
+//}
+
+@mixin pseudo( $display: block, $pos: absolute, $top: 0px, $left: 0px ){
+  content: '';
+  display: $display;
+  position: $pos;
+  top: $top;
+  left: $left;
+}
+
+//a {
+//  @include pseudo( block, absolute, 10px, 5px );
+//}
+
+@mixin box( $width, $height: auto ) {
+  width: $width;
+  height: $height;
+}
+
+//div {
+//  @include pseudo( block, absolute, 10px, 5px );
+//}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//.cf {
+//  @include clearfix;
+//}
+
+
+@mixin center-vertically {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+}
+
+//.vc-box {
+//  @include center-vertically;
+//}

@@ -1,0 +1,112 @@
+
+.lr-left-sidebar {
+    width: 250px;
+    background-color: #fdfdfd;
+    padding: 50px 20px 50px 25px;
+    border-right: 1px solid #c5c5c5;
+}
+
+.lr-left-sidebar__title {
+    font-weight: bold;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+}
+
+.lr-left-sidebar__list {
+    list-style: none;
+    padding-left: 22px;
+}
+
+.lr-left-sidebar__item {
+    position: relative;
+    margin-bottom: 4px;
+    
+    &:before {
+        content: '\25cf';
+        position: absolute;
+        top: 2px;
+        left: -11px;
+        width: 12px;
+        height: 14px;
+        font-size: 12px;
+        line-height: 1;
+    }
+    &.lr-left-sidebar__item--active {
+        &:before {
+            content: '\2605';
+            left: -14px;
+            top: 0;
+            font-size: 16px;
+        }
+
+        .lr-left-sidebar__link {
+            cursor: default;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}
+
+.lr-left-sidebar__link {
+    font-size: 14px;
+    color: #222;
+    text-decoration: none;
+    transition: color .2s;
+    display: block;
+}
+
+.lr-left-sidebar__pug {
+
+    .lr-left-sidebar__title,
+    .lr-left-sidebar__item:before,
+    .lr-left-sidebar__link:hover  {
+        color: darken(#3949ab, 12%); //теменее основного цвета на 12%
+    }
+}
+
+.lr-left-sidebar__css {
+
+    .lr-left-sidebar__title,
+    .lr-left-sidebar__item:before,
+    .lr-left-sidebar__link:hover {
+        color: darken(#7d1935, 12%);
+    }
+}
+
+.lr-left-sidebar__js {
+
+    .lr-left-sidebar__title,
+    .lr-left-sidebar__item:before,
+    .lr-left-sidebar__link:hover  {
+        color: #512da8;
+    }
+}
+
+.lr-left-sidebar__python {
+
+    .lr-left-sidebar__title,
+    .lr-left-sidebar__item:before,
+    .lr-left-sidebar__link:hover  {
+        color: #1565c0;
+    }
+}
+
+.lr-left-sidebar__django {
+
+    .lr-left-sidebar__title,
+    .lr-left-sidebar__item:before,
+    .lr-left-sidebar__link:hover  {
+        color: #005a31;
+    }
+}
+
+.lr-left-sidebar__gulp {
+
+    .lr-left-sidebar__title,
+    .lr-left-sidebar__item:before,
+    .lr-left-sidebar__link:hover  {
+        color: darken(#CF4647, 12%);
+    }
+}

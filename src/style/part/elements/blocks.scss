@@ -1,0 +1,37 @@
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    font-style: normal;
+    font-weight: 400;
+    background-color: $color-white;
+    font-size: 1rem;
+    position: relative;
+    min-height: 100%;
+    color: $color-grey-darkness;
+    font-family: $Ubuntu;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lr-inner-container {
+    width: calc(100% - 300px);
+    padding: 25px 35px 50px;
+}
+
+.lr-container {
+    width: 74%;
+    margin: {
+        top: 50px;
+        bottom: 50px;
+        left: auto;
+        right: auto;
+    };
+}

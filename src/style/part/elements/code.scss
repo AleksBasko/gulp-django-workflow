@@ -1,0 +1,21 @@
+
+pre,
+.example {
+    margin: 0 0 15px 0;
+    padding: {
+        top: 25px;
+        bottom: 25px;
+        left: 30px;
+        right: 25px;
+    }
+    border-radius: 5px;
+    line-height: 1.4;
+    font-family: $Mukta;
+    p {
+        margin: 0;
+    }
+}
+
+.text__red {
+    color: red;
+}
