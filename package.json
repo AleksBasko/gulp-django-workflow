@@ -37,6 +37,7 @@
     "node-notifier": "^5.1.2"
   },
   "dependencies": {
+    "gulp-clean": "^0.3.2",
     "normalize.css": "^7.0.0",
     "svg4everybody": "^2.1.9"
   }

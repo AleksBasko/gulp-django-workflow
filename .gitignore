@@ -1,3 +1,6 @@
 /node_modules
 /.idea
 /dist
+/static
+/image/sprites/sprite
+/image/sprites/spriteSVG

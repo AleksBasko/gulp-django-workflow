@@ -16,7 +16,7 @@ const path = {
         imageDist: '../static/image/'
     },
     js: {
-        jsSrc: ['node_modules/svg4everybody/dist/svg4everybody.js', 'src/js/first.js', 'src/js/part/**/*.js'],
+        jsSrc: ['src/js/first.js', 'src/js/part/**/*.js'],
         jsDist: '../static/js/'
     },
     fonts: {
@@ -27,7 +27,12 @@ const path = {
         style: 'src/style/**/*.scss',
         js: 'src/**/*.js',
         fonts: 'src/fonts/**/*.*',
-        image: 'src/image/**/*.*'
+        // image: 'src/image/**/*.*'
+        image: {
+            image: ['src/image/**/*.*', '!src/image/sprites/toSprite/*.*', '!src/image/sprites/toSpriteSVG/*.*'],
+            sprite: 'src/image/sprites/toSprite/*.+(jpg|jpeg|png)',
+            spriteSVG: 'src/image/sprites/toSpriteSVG/*.svg'
+        }
     },
     dist: '../static'
 };
@@ -125,7 +130,7 @@ gulp.task('cleansprite', () => {
 
 gulp.task('spritemade', () => {
     const spriteData =
-        gulp.src('src/image/sprites/toSprite/*.*')
+        gulp.src('src/image/sprites/toSprite/*.+(jpg|jpeg|png)')
             .pipe($.spritesmith({
                 imgName: 'sprite.png',
                 imgPath: '../image/sprites/sprite/sprite.png',
@@ -177,7 +182,7 @@ gulp.task('cleanspriteSVG', () => {
 gulp.task('spriteSVG', gulp.series('cleanspriteSVG', 'svgmin'));
 
 gulp.task('clean', () => {
-    return del(path.dist).then(() => {
+    return del(path.dist, {force: true}).then(() => {
         notifier.notify({
             title: 'Directory dist',
             message: 'Clean Done!'
@@ -192,12 +197,14 @@ gulp.task('clean', () => {
 
 gulp.task('watch', () => {
     gulp.watch(path.watch.style, gulp.series('css'));
-    // gulp.watch(path.watch.js, gulp.series('js'));
-    gulp.watch(path.watch.image, gulp.series('image'));
+    gulp.watch(path.watch.js, gulp.series('js'));
+    gulp.watch(path.watch.image.sprite, gulp.series('sprite'));
+    gulp.watch(path.watch.image.spriteSVG, gulp.series('spriteSVG'));
+    gulp.watch(path.watch.image.image, gulp.series('image'));
 });
 
 gulp.task('dev', gulp.series(
     'clean',
-    gulp.series('sprite', 'spriteSVG', 'image'), 'css'));
+    gulp.series('sprite', 'spriteSVG', 'image'), 'js', 'css'));
 
 gulp.task('default', gulp.series('dev', 'watch'));
